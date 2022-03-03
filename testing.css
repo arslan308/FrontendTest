@@ -1,0 +1,239 @@
+*
+{
+box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+}
+@font-face {
+    font-family: Gotham;
+    src: url(gothamhtf-bold-webfont.ttf);
+    }
+@font-face {
+    font-family: Gotham2;
+    src: url(gothamhtf-book-webfont.ttf);
+    }
+.image1 img {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+.image1 {
+    position: relative;
+}
+.Happypoints {
+    font-family: Gotham;
+    position: absolute;
+    letter-spacing: 1px;
+    top: 50%;
+    text-align: center;
+    left: 50%;
+    font-size: 40px;
+    transform: translate(-50%, -50%);
+}
+.sidetext {
+    font-family: Gotham2;
+    position: absolute;
+    letter-spacing: 1px;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+    line-height: 2.8;
+}
+.sidetext ul li{
+    list-style-type: none;
+    font-family: 'Gotham2';
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+.partleftimage img {
+    width: 100%;
+    height: 100%;
+}
+.partleftimage{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.partlefttext {
+    font-family: Gotham;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    left: 50%;
+    font-size: 40px;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.partrightimage img{
+    width: 100%;
+    height: 100%;
+}
+.relative2 {
+    overflow: hidden;
+    display: flex;
+}
+.partleft{
+    width: 50%;
+}
+.partright{
+    width: 50%;
+}
+.partrightimage{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.partrighttext {
+    font-family: Gotham;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    left: 50%;
+    font-size: 40px;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.partrighttext p {
+    font-size: 20px !important ;
+}
+.paragraph p{
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Gotham2';
+}
+.happyimage {
+    width: 20%;
+}
+.mix {
+    display: flex;
+}
+.happyimage img {
+    width: 100%;
+    height: 100%;
+}
+.footer{
+    display: flex;
+    width: 88%;
+    margin: 0 auto;
+    padding-top: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footerbox{
+    width: 78%;
+    padding: 5px;
+}
+.footerbox input {
+    width: 78%;
+    padding:10px;
+    border: 2px solid #2b2a2a;
+}
+.footertext {
+    width: 50%;
+}
+.footerimage img {
+    width: 40%;
+}
+.contact ul li {
+    font-family: Gotham2;
+    list-style-type: none;
+    line-height: 25px;
+    font-size: 16px;
+}
+.footerp h3{
+    font-family: Gotham;
+}
+.boldtext{
+    font-family: Gotham ! important ;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+button.footer-button {
+    background: black;
+    color: white;
+    border: unset;
+    padding: 12px;
+    font-family: 'Gotham2';
+}
+
+.footer-info ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-info ul li {
+    list-style-type: none;
+    padding: 0px 10px;
+    font-family: 'Gotham';
+    font-size: 12px;
+}
+.footer-info {
+    margin: 20px 0px;
+}
+.footer-info ul li:after {
+    content: "|";
+    padding-left: 15px;
+}
+li.footer-last-li:after {
+    content: "";
+    font-size: 0;
+}
+@media only screen and (max-width:768px){
+    .footertext{
+        width: 100%;
+        text-align: center;
+    }
+    .footerbox {
+        width: 95%;
+        padding: 5px;
+        margin: 0 auto;
+    }
+    .footer-info{
+        display: none;
+    }
+    .contact ul li{
+        text-align: center;
+    }
+    .footer{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    }
+    .happyimage {
+        width: 33%;
+        padding: 5px;
+    }
+    .mix {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .Happypoints{
+        top: 15%;
+        transform: translate(-50%, -10%);
+    }
+    .sidetext ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sidetext {
+    display:none;
+    left: 50%;
+    top:40%;
+    transform: translate(-50%, -50%);
+    }
+    .Happypoints{
+        font-size: 22px;
+    }
+    .sidetext ul li{
+        font-size: 11px;
+        padding: 0 12px;
+    }
+    .partlefttext, .partrighttext{
+        font-size: 22px;
+    }
+}
